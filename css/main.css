@@ -1,9 +1,12 @@
+body {
+    background-image: radial-gradient(#fff, #e0e0e0);
+}
 #header {
     position: relative;
 }
 
 #tagline-container {
-    background-color: #E40046;
+    background-color: #d32f2f;
     height:20px;
     font-size: 12px;
 }
@@ -14,10 +17,10 @@
 
 #brand-container {
     background-color: #FE171F;
-    padding:20px;
+    padding:5px;
 }
 #cart-button {
-    background-color: #E40046;
+    background-color: #D32F2F;
 }
 
 #navigation {
@@ -33,7 +36,7 @@
     padding:10px;
 }
 #navigation  a:hover {
-    background-color: #E40046;
+    background-color: #D32F2F;
 }
 
 
@@ -64,16 +67,19 @@
     display: block;
 }
 #categories-content a:hover {
-    background-color: #f1f1f1
+    background-color: #FE171F;
+    color: #fff;
 }
 /* Show the dropdown menu on hover */
 .dropdown:hover #categories-content {
     display: block;
 }
 
-
 .carousel {
-    margin-top: 190px;
+    margin-top: 180px;
+    margin-left:1vw;
+    margin-right: 2vw;
+    width:97vw;
 }
 .carousel img {
     width:100%;
@@ -84,7 +90,7 @@
     margin-top:50px;
 }
 #trending .col-3, #deals .col-3, #mobiles .col-3 {
-    background-color: #E40046;
+    background-color: #D32F2F;
     color: #fff;
 }
 #trending-products, #deals-of-day, #mobiles-products {
@@ -108,5 +114,5 @@
 footer {
     width:100%;
     height:25px;
-    background-color: #E40046;
+    background-color: #D32F2F;
 }
