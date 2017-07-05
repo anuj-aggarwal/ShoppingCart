@@ -96,12 +96,12 @@ function addItemToTable(id) {
         `
             <td>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-4">
                         <div class="card py-2" data-id="${item.id}">
                         <img class="card-img-top img-fluid px-5" src="${item.url}" alt="Card image">
                     </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-8">
                         <div class="card-block text-center">
                             <h4 class="card-title">${item.name}</h4>
                         </div>
