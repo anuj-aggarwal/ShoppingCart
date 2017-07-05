@@ -1,47 +1,56 @@
-{
-  "m0": {
+[
+  {
+    "id": "m0",
     "name": "OnePlus 5(Slate Gray, 6GB RAM + 64 GB memory)",
     "price": 32999,
     "url": "images/mobiles/oneplus-5.jpg"
   },
-  "m1": {
+  {
+    "id": "m1",
     "name": "Redmi Note 4(Black, 64 GB)",
     "price": 12999,
     "url": "images/mobiles/redmi-note4.jpg"
   },
-  "m2": {
+  {
+    "id": "m2",
     "name": "Apple iPhone 7 Plus(Black, 32 GB)",
     "price": 61199,
     "url": "images/mobiles/iphone-7plus.jpeg"
   },
-  "m3": {
+  {
+    "id": "m3",
     "name": "Apple iPhone 7(Black, 32 GB)",
     "price": 47699,
     "url": "images/mobiles/iphone-7.jpeg"
   },
-  "m4": {
+  {
+    "id": "m4",
     "name": "Apple iPhone 7(Black, 128 GB)",
     "price": 56499,
     "url": "images/mobiles/iphone-7.jpeg"
   },
-  "m5": {
+  {
+    "id": "m5",
     "name": "Apple iPhone 7 Plus(Black, 128 GB)",
     "price": 69999,
     "url": "images/mobiles/iphone-7plus.jpeg"
   },
-  "m6": {
+  {
+    "id": "m6",
     "name": "Samsung Galaxy S8 Plus(Midnight Black, 128 GB)",
     "price": 74900,
     "url": "images/mobiles/s8-plus.jpeg"
   },
-  "m7": {
+  {
+    "id": "m7",
     "name": "Moto G5 Plus(Lunar Grey, 32 GB)",
     "price": 16999,
     "url": "images/mobiles/moto-g5plus.jpeg"
   },
-  "m8": {
+  {
+    "id": "m8",
     "name": "Samsung Galaxy S6 Edge(Black Sapphire, 32 GB)",
     "price": 55999,
     "url": "images/mobiles/s6edge.jpeg"
   }
-}
+]

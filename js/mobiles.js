@@ -1,8 +1,8 @@
 "use strict";
 
 var itemsList;  // Bootstrap row containing all Item Cards
-var catalog = {};   // Catalog as an Object with keys as Data-ID
-var cartItems = {}; // Cart as an object with Data-ID:price pairs
+var catalog = [];   // Catalog as an Array of objects
+var cartItems = {}; // Cart as an object with Data-ID:quantity pairs
 
 // Window.OnLoad
 $(function () {
@@ -58,16 +58,16 @@ function fetchCatalog() {
 // Show the catalog passed
 function showCatalog(catalog) {
     itemsList.html("");
-    for (var id in catalog) {
-        addItemToList(id, catalog[id]);
+    for (var item of catalog) {
+        addItemToList(item);
     }
     $(".addCart").click(addToCart);
 }
 // Add passed item to the List of items
-function addItemToList(id, item) {
+function addItemToList(item) {
     var newItem = $("<div class='col-sm-6 col-lg-4'>");
     newItem.html(
-        `<div class="card py-2" data-id="${id}">
+        `<div class="card py-2" data-id="${item.id}">
             <img class="card-img-top img-fluid px-5" src="${item.url}" alt="Card image">
             <div class="card-block text-center">
                 <h4 class="card-title">${item.name}</h4>
