@@ -67,7 +67,8 @@ function showCatalog(catalog) {
 function addItemToList(item) {
     var newItem = $("<div class='col-sm-6 col-lg-4'>");
     newItem.html(
-        `<div class="card py-2" data-id="${item.id}">
+        `
+        <div class="card py-2" data-id="${item.id}">
             <img class="card-img-top img-fluid px-5" src="${item.url}" alt="Card image">
             <div class="card-block text-center">
                 <h4 class="card-title">${item.name}</h4>
@@ -76,7 +77,8 @@ function addItemToList(item) {
                     Add to Cart
                 </button>
             </div>
-        </div>`
+        </div>
+`
     );
     itemsList.append(newItem);
 }
