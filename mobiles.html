@@ -128,12 +128,41 @@
 				</div>
 				<!-- SIDEBAR FOR FILTERS AND SORT -->
 				<div class="col-3">
-					<div class="form-group">
-						<label for="sort-select">Sort By: </label>
-						<select class="form-control" id="sort-select">
-							<option value="0">Price: Low to High</option>
-							<option value="1">Price: High to Low</option>
-						</select>
+					<div class="container">
+						<div class="row sidebar">
+							<div class="form-group">
+								<label class="h3" for="sort-select">Sort By: </label>
+								<select class="form-control" id="sort-select">
+									<option value="0">Price: Low to High</option>
+									<option value="1">Price: High to Low</option>
+								</select>
+							</div>
+						</div>
+						<div class="row sidebar text-center">
+							<div class="h2">Filters</div>
+							<div class="filter">
+								<div class="h4">Price: </div>
+								<div class="row">
+									<div class="col">
+										<label for="rs-addon1">Min. Price</label>
+										<div class="input-group">
+											<span class="input-group-addon" id="rs-addon1">₹</span>
+											<input type="number" class="form-control" id="min-price" aria-describedby="rs-addon1">
+										</div>
+									</div>
+									<div class="col">
+										<label for="rs-addon2">Max. Price</label>
+										<div class="input-group">
+											<span class="input-group-addon" id="rs-addon2">₹</span>
+											<input type="number" class="form-control" id="max-price" aria-describedby="rs-addon2">
+										</div>
+									</div>
+								</div>
+								<div class="mt-2">
+									<button class="btn btn-primary" id="price-filter-button">Apply</button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
