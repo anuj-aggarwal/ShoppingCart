@@ -91,28 +91,31 @@ button {
     height:400px;
 }
 
-
-#trending, #deals, #mobiles {
+.col-4 a {
+    text-decoration: none;
+    color: #FE171F;
+}
+#trending, #deals, #laptops {
     margin-top:50px;
 }
-#trending .col-3, #deals .col-3, #mobiles .col-3 {
+#trending .col-3, #deals .col-3, #laptops .col-3 {
     background-color: #D32F2F;
     color: #fff;
 }
-#trending-products, #deals-of-day, #mobiles-products {
+#trending-products, #deals-of-day, #laptop-products {
     background-color: #F44336;
     padding:20px 50px;
 
 }
-#trending .col-3, #deals-of-day, #mobiles .col-3 {
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+#trending .col-3, #deals-of-day, #laptops .col-3 {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
 }
-#trending-products, #deals .col-3, #mobiles-products {
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+#trending-products, #deals .col-3, #laptop-products {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
 }
-#mobiles {
+#laptops {
     margin-bottom: 50px;
 }
 
