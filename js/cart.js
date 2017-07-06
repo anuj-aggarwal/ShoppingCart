@@ -1,11 +1,7 @@
 var catalog = [];   // Combined Catalog of all Categories
 var cartItems = {};
-var cartTable;
-var tableTotal;
 
 $(function () {
-    cartTable = $("#table-body");
-    tableTotal = $("#table-total");
     var clearButton = $("#clear-button");
     clearButton.click(function () {
         cartItems = {};
@@ -91,20 +87,51 @@ function fetchCatalog() {
 }
 
 function showCart() {
+    var cartTable = $(".table");
     cartTable.html("");
-    var total = 0.0;
+    if(Object.keys(cartItems).length != 0) {
+        cartTable.append(`
+                <thead class="bg-primary text-white">
+					<tr>
+						<th width="900px">Item Name</th>
+						<th>Price</th>
+						<th>Quantity</th>
+						<th>Amount</th>
+					</tr>
+				</thead>
+				<tbody id="table-body">
+				
+				</tbody>
+        `);
 
-    for (id in cartItems) {
-        total += addItemToTable(id);
+        var cartBody = $("#table-body");
+        var tableTotal = 0.0;
+
+
+        for (id in cartItems) {
+            tableTotal += addItemToTable(id, cartBody);
+        }
+
+        cartTable.append(`
+                <thead class="bg-primary text-white">
+					<tr>
+						<th colspan="3">TOTAL</th>
+						<th id="table-total">₹ ${tableTotal}</th>
+					</tr>
+				</thead>
+        `);
+
+        $(".remove-icon").click(removeFromCart);
+        $(".add-icon").click(addToCart);
     }
-
-    tableTotal.text("₹ " + total.toString());
-
-    $(".remove-icon").click(removeFromCart);
-    $(".add-icon").click(addToCart);
+    else {
+        cartTable.append(`
+                <div class="h1 text-center text-primary my-5">CART EMPTY</div>
+        `)
+    }
 }
 
-function addItemToTable(id) {
+function addItemToTable(id, cartTable) {
     var category = id.split(".")[0];
     var itemId = id.split(".")[1];
     var item = catalog[category][itemId];
@@ -152,19 +179,3 @@ function addItemToTable(id) {
     cartTable.append(newItem);
     return cartItems[item.id] * item.price;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

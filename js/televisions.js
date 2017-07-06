@@ -101,11 +101,21 @@ function showCatalog(catalog) {
     }
 
     // Show the Sorted and Filtered Catalog
-    itemsList.html("");
-    for (var item of catalog) {
-        addItemToList(item);
+    if (catalog[0]) {
+        console.log('hello');
+        // Show the Sorted and Filtered Catalog
+        itemsList.html("");
+        for (var item of catalog) {
+            addItemToList(item);
+        }
+        $(".addCart").click(addToCart);
     }
-    $(".addCart").click(addToCart);
+    else{
+        itemsList.html("");
+        itemsList.append(`
+                <div class="h1 text-center text-primary my-5 mx-5">Sorry, no results matched</div>
+        `)
+    }
 }
 
 // Add passed item to the List of items

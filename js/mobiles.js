@@ -12,9 +12,15 @@ $(function () {
     fetchCart();
     fetchCatalog(catalog);
 
-    $(document).on('change', '#sort-select', function(){showCatalog(catalog)});
-    $('#price-filter-button').on('click', function(){showCatalog(catalog);});
-    $('#brands input').on('click', function(){showCatalog(catalog)});
+    $(document).on('change', '#sort-select', function () {
+        showCatalog(catalog)
+    });
+    $('#price-filter-button').on('click', function () {
+        showCatalog(catalog);
+    });
+    $('#brands input').on('click', function () {
+        showCatalog(catalog)
+    });
 });
 
 // Add the Item in event.target's Card to the catalog
@@ -39,20 +45,20 @@ function fetchCatalog() {
     $.getJSON("data/mobiles.json", function (data) {
         catalog = data;
         // Find minimum Price and update min-price
-        $("#min-price").attr('value', catalog.reduce(function(a, b){
-            if(a==catalog[0]){
+        $("#min-price").attr('value', catalog.reduce(function (a, b) {
+            if (a == catalog[0]) {
                 return Math.min(a.price, b.price);
             }
-            else{
+            else {
                 return Math.min(a, b.price);
             }
         }));
         // Find maximum Price and update max-price
-        $("#max-price").attr('value', catalog.reduce(function(a, b){
-            if(a==catalog[0]){
+        $("#max-price").attr('value', catalog.reduce(function (a, b) {
+            if (a == catalog[0]) {
                 return Math.max(a.price, b.price);
             }
-            else{
+            else {
                 return Math.max(a, b.price);
             }
         }));
@@ -72,7 +78,7 @@ function showCatalog(catalog) {
         });
     }
     else if (id == 1) {    // Sort in descending order
-        catalog =  catalog.sort(function (item1, item2) {
+        catalog = catalog.sort(function (item1, item2) {
             return item2.price - item1.price;
         });
     }
@@ -81,30 +87,39 @@ function showCatalog(catalog) {
     var minPrice = Number($("#min-price").val());
     var maxPrice = Number($("#max-price").val());
 
-    catalog = catalog.filter(function(item) {
+    catalog = catalog.filter(function (item) {
         return item.price >= minPrice && item.price <= maxPrice;
     });
 
     // APPLY THE BRAND FILTERS
     var brandsSelected = document.querySelectorAll("#brands input:checked");
     console.log(brandsSelected);
-    if(brandsSelected[0]){
-        catalog = catalog.filter(function(item){
+    if (brandsSelected[0]) {
+        catalog = catalog.filter(function (item) {
             var found = false;
-            for(var i of brandsSelected){
-                if(item.brand==i.value)
+            for (var i of brandsSelected) {
+                if (item.brand == i.value)
                     found = true;
             }
             return found;
         });
     }
-
-    // Show the Sorted and Filtered Catalog
-    itemsList.html("");
-    for (var item of catalog) {
-        addItemToList(item);
+    console.log(catalog[0]);
+    if (catalog[0]) {
+        console.log('hello');
+        // Show the Sorted and Filtered Catalog
+        itemsList.html("");
+        for (var item of catalog) {
+            addItemToList(item);
+        }
+        $(".addCart").click(addToCart);
     }
-    $(".addCart").click(addToCart);
+    else{
+        itemsList.html("");
+        itemsList.append(`
+                <div class="h1 text-center text-primary my-5 mx-5">Sorry, no results matched</div>
+        `)
+    }
 }
 
 // Add passed item to the List of items
@@ -126,7 +141,6 @@ function addItemToList(item) {
     );
     itemsList.append(newItem);
 }
-
 
 
 // Get the Cart from the local Storage
