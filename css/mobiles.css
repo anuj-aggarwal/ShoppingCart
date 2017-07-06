@@ -83,6 +83,24 @@ button {
 }
 
 
+.carousel {
+    margin-top: 10px;
+    margin-left:1vw;
+    margin-right: 2vw;
+    width:97vw;
+}
+
+.carousel img {
+    width:100%;
+    height:400px;
+}
+
+
+
+
+
+
+
 .card { /* GIVE SPACING BETWEEN CARDS */
     margin: 5% 5% 5% 5%;
     height: 90%;
