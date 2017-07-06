@@ -4,10 +4,12 @@ var itemsList;  // Bootstrap row containing all Item Cards
 var catalog = [];   // Catalog as an Array of objects
 var cartItems = {}; // Cart as an object with Data-ID:quantity pairs
 var brands = ["OnePlus", "Xiaomi", "Apple", "Samsung", "Motorola"];
+var excludeSelected;
 
 // Window.OnLoad
 $(function () {
     itemsList = $("#items");
+    excludeSelected = $('#excludeSelected');
 
     fetchCart();
     fetchCatalog(catalog);
@@ -20,6 +22,10 @@ $(function () {
     });
     $('#brands input').on('click', function () {
         showCatalog(catalog)
+    });
+    excludeSelected.on('click', function(){
+        console.log('called');
+        showCatalog(catalog);
     });
 });
 
@@ -104,9 +110,14 @@ function showCatalog(catalog) {
             return found;
         });
     }
-    console.log(catalog[0]);
+
+    if(excludeSelected.is(':checked')){
+        catalog = catalog.filter(function(item){
+            return !(cartItems[item.id]);
+        })
+    }
+
     if (catalog[0]) {
-        console.log('hello');
         // Show the Sorted and Filtered Catalog
         itemsList.html("");
         for (var item of catalog) {
@@ -124,6 +135,10 @@ function showCatalog(catalog) {
 
 // Add passed item to the List of items
 function addItemToList(item) {
+    var quantity = cartItems[item.id];
+    if (!quantity) {
+        quantity = 0;
+    }
     var newItem = $("<div class='col-sm-6 col-lg-4'>");
     newItem.html(
         `
@@ -134,6 +149,7 @@ function addItemToList(item) {
                 <p class="card-text">₹ ${item.price}</p>
                 <button class="btn btn-outline-primary addCart">
                     Add to Cart
+                    <span class="badge badge-pill badge-danger">${quantity}</span>
                 </button>
             </div>
         </div>

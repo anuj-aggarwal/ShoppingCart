@@ -4,17 +4,28 @@ var itemsList;  // Bootstrap row containing all Item Cards
 var catalog = [];   // Catalog as an Array of objects
 var cartItems = {}; // Cart as an object with Data-ID:quantity pairs
 var brands = ["HP", "Dell", "Lenovo"];
+var excludeSelected;
 
 // Window.OnLoad
 $(function () {
     itemsList = $("#items");
+    excludeSelected = $('#excludeSelected');
 
     fetchCart();
     fetchCatalog(catalog);
 
-    $(document).on('change', '#sort-select', function(){showCatalog(catalog)});
-    $('#price-filter-button').on('click', function(){showCatalog(catalog);});
-    $('#brands input').on('click', function(){showCatalog(catalog)});
+    $(document).on('change', '#sort-select', function () {
+        showCatalog(catalog)
+    });
+    $('#price-filter-button').on('click', function () {
+        showCatalog(catalog);
+    });
+    $('#brands input').on('click', function () {
+        showCatalog(catalog)
+    });
+   excludeSelected.on('click', function(){
+        showCatalog(catalog);
+    });
 
 });
 
@@ -39,20 +50,20 @@ function fetchCatalog() {
     $.getJSON("data/laptops.json", function (data) {
         catalog = data;
         // Find minimum Price and update min-price
-        $("#min-price").attr('value', catalog.reduce(function(a, b){
-            if(a==catalog[0]){
+        $("#min-price").attr('value', catalog.reduce(function (a, b) {
+            if (a == catalog[0]) {
                 return Math.min(a.price, b.price);
             }
-            else{
+            else {
                 return Math.min(a, b.price);
             }
         }));
         // Find maximum Price and update max-price
-        $("#max-price").attr('value', catalog.reduce(function(a, b){
-            if(a==catalog[0]){
+        $("#max-price").attr('value', catalog.reduce(function (a, b) {
+            if (a == catalog[0]) {
                 return Math.max(a.price, b.price);
             }
-            else{
+            else {
                 return Math.max(a, b.price);
             }
         }));
@@ -72,7 +83,7 @@ function showCatalog(catalog) {
         });
     }
     else if (id == 1) {    // Sort in descending order
-        catalog =  catalog.sort(function (item1, item2) {
+        catalog = catalog.sort(function (item1, item2) {
             return item2.price - item1.price;
         });
     }
@@ -81,23 +92,30 @@ function showCatalog(catalog) {
     var minPrice = Number($("#min-price").val());
     var maxPrice = Number($("#max-price").val());
 
-    catalog = catalog.filter(function(item) {
+    catalog = catalog.filter(function (item) {
         return item.price >= minPrice && item.price <= maxPrice;
     });
 
     // APPLY THE BRAND FILTERS
     var brandsSelected = document.querySelectorAll("#brands input:checked");
     console.log(brandsSelected);
-    if(brandsSelected[0]){
-        catalog = catalog.filter(function(item){
+    if (brandsSelected[0]) {
+        catalog = catalog.filter(function (item) {
             var found = false;
-            for(var i of brandsSelected){
-                if(item.brand==i.value)
+            for (var i of brandsSelected) {
+                if (item.brand == i.value)
                     found = true;
             }
             return found;
         });
     }
+
+    if(excludeSelected.is(':checked')){
+        catalog = catalog.filter(function(item){
+            return !(cartItems[item.id]);
+        })
+    }
+
 
     // Show the Sorted and Filtered Catalog
     if (catalog[0]) {
@@ -109,7 +127,7 @@ function showCatalog(catalog) {
         }
         $(".addCart").click(addToCart);
     }
-    else{
+    else {
         itemsList.html("");
         itemsList.append(`
                 <div class="h1 text-center text-primary my-5 mx-5">Sorry, no results matched</div>
@@ -119,6 +137,10 @@ function showCatalog(catalog) {
 
 // Add passed item to the List of items
 function addItemToList(item) {
+    var quantity = cartItems[item.id];
+    if (!quantity) {
+        quantity = 0;
+    }
     var newItem = $("<div class='col-sm-6 col-lg-4'>");
     newItem.html(
         `
@@ -129,6 +151,7 @@ function addItemToList(item) {
                 <p class="card-text">₹ ${item.price}</p>
                 <button class="btn btn-outline-primary addCart">
                     Add to Cart
+                    <span class="badge badge-pill badge-danger">${quantity}</span>
                 </button>
             </div>
         </div>
@@ -136,7 +159,6 @@ function addItemToList(item) {
     );
     itemsList.append(newItem);
 }
-
 
 
 // Get the Cart from the local Storage

@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d1193ae-8acc-4720-a2fe-d7ca993162bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cart.html" afterPath="$PROJECT_DIR$/cart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/cart.js" afterPath="$PROJECT_DIR$/js/cart.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/laptops.js" afterPath="$PROJECT_DIR$/js/laptops.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/mobiles.js" afterPath="$PROJECT_DIR$/js/mobiles.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/televisions.js" afterPath="$PROJECT_DIR$/js/televisions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laptops.html" afterPath="$PROJECT_DIR$/laptops.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobiles.html" afterPath="$PROJECT_DIR$/mobiles.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/televisions.html" afterPath="$PROJECT_DIR$/televisions.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,8 +25,28 @@
       <file leaf-file-name="mobiles.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobiles.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="222" column="104" lean-forward="false" selection-start-line="222" selection-start-column="104" selection-end-line="222" selection-end-column="104" />
+            <state relative-caret-position="259">
+              <caret line="229" column="60" lean-forward="false" selection-start-line="229" selection-start-column="60" selection-end-line="229" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="laptops.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laptops.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="446">
+              <caret line="206" column="60" lean-forward="false" selection-start-line="206" selection-start-column="60" selection-end-line="206" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="televisions.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/televisions.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="211" column="60" lean-forward="false" selection-start-line="211" selection-start-column="60" selection-end-line="211" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -35,12 +55,17 @@
       <file leaf-file-name="mobiles.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/mobiles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="121" column="5" lean-forward="true" selection-start-line="107" selection-start-column="3" selection-end-line="121" selection-end-column="5" />
+            <state relative-caret-position="119">
+              <caret line="113" column="4" lean-forward="false" selection-start-line="113" selection-start-column="4" selection-end-line="118" selection-end-column="0" />
               <folding>
-                <marker date="1499347492833" expanded="true" signature="3835:4244" ph="..." />
-                <marker date="1499347492833" expanded="true" signature="3973:4229" ph="..." />
-                <marker date="1499347492833" expanded="true" signature="4152:4210" ph="..." />
+                <element signature="n#!!block;n#addToCart#0" expanded="false" />
+                <element signature="n#!!block;n#fetchCatalog#0" expanded="false" />
+                <element signature="n#!!block;n#addItemToList#0" expanded="false" />
+                <element signature="n#!!block;n#fetchCart#0" expanded="false" />
+                <element signature="n#!!block;n#saveCart#0" expanded="false" />
+                <marker date="1499350483535" expanded="true" signature="4193:4685" ph="..." />
+                <marker date="1499350483535" expanded="true" signature="4331:4670" ph="..." />
+                <marker date="1499350483535" expanded="true" signature="4510:4651" ph="..." />
               </folding>
             </state>
           </provider>
@@ -49,12 +74,12 @@
       <file leaf-file-name="televisions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/televisions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="117" column="5" lean-forward="false" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
+            <state relative-caret-position="204">
+              <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
               <folding>
-                <marker date="1499347558607" expanded="true" signature="3756:4165" ph="..." />
-                <marker date="1499347558607" expanded="true" signature="3894:4150" ph="..." />
-                <marker date="1499347558607" expanded="true" signature="4073:4131" ph="..." />
+                <marker date="1499350539773" expanded="true" signature="4142:4634" ph="..." />
+                <marker date="1499350539773" expanded="true" signature="4280:4619" ph="..." />
+                <marker date="1499350539773" expanded="true" signature="4459:4600" ph="..." />
               </folding>
             </state>
           </provider>
@@ -63,12 +88,12 @@
       <file leaf-file-name="laptops.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/laptops.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="116" column="5" lean-forward="false" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
+            <state relative-caret-position="238">
+              <caret line="110" column="5" lean-forward="true" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
               <folding>
-                <marker date="1499347558685" expanded="true" signature="3751:4160" ph="..." />
-                <marker date="1499347558685" expanded="true" signature="3889:4145" ph="..." />
-                <marker date="1499347558685" expanded="true" signature="4068:4126" ph="..." />
+                <marker date="1499350539842" expanded="true" signature="4208:4700" ph="..." />
+                <marker date="1499350539842" expanded="true" signature="4346:4685" ph="..." />
+                <marker date="1499350539842" expanded="true" signature="4525:4666" ph="..." />
               </folding>
             </state>
           </provider>
@@ -122,6 +147,10 @@
       <find>function show</find>
       <find>brand</find>
       <find>showCata</find>
+      <find>showC</find>
+      <find>additem</find>
+      <find>console</find>
+      <find>add</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,11 +168,11 @@
         <option value="$PROJECT_DIR$/data/mobiles.json" />
         <option value="$PROJECT_DIR$/data/televisions.json" />
         <option value="$PROJECT_DIR$/css/mobiles.css" />
+        <option value="$PROJECT_DIR$/cart.html" />
+        <option value="$PROJECT_DIR$/js/cart.js" />
         <option value="$PROJECT_DIR$/mobiles.html" />
         <option value="$PROJECT_DIR$/laptops.html" />
         <option value="$PROJECT_DIR$/televisions.html" />
-        <option value="$PROJECT_DIR$/cart.html" />
-        <option value="$PROJECT_DIR$/js/cart.js" />
         <option value="$PROJECT_DIR$/js/mobiles.js" />
         <option value="$PROJECT_DIR$/js/televisions.js" />
         <option value="$PROJECT_DIR$/js/laptops.js" />
@@ -336,12 +365,12 @@
       <option name="presentableId" value="Default" />
       <updated>1499333639334</updated>
       <workItem from="1499333641658" duration="5003000" />
-      <workItem from="1499340644387" duration="6979000" />
+      <workItem from="1499340644387" duration="9887000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12456000" />
+    <option name="totallyTimeSpent" value="15364000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -542,22 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laptops.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="199" column="100" lean-forward="false" selection-start-line="199" selection-start-column="100" selection-end-line="199" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/televisions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="185" column="48" lean-forward="true" selection-start-line="185" selection-start-column="48" selection-end-line="185" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/cart.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -573,14 +586,6 @@
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobiles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="222" column="104" lean-forward="false" selection-start-line="222" selection-start-column="104" selection-end-line="222" selection-end-column="104" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -612,38 +617,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mobiles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="229" column="60" lean-forward="false" selection-start-line="229" selection-start-column="60" selection-end-line="229" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laptops.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="206" column="60" lean-forward="false" selection-start-line="206" selection-start-column="60" selection-end-line="206" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/televisions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="211" column="60" lean-forward="false" selection-start-line="211" selection-start-column="60" selection-end-line="211" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/mobiles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="121" column="5" lean-forward="true" selection-start-line="107" selection-start-column="3" selection-end-line="121" selection-end-column="5" />
+        <state relative-caret-position="119">
+          <caret line="113" column="4" lean-forward="false" selection-start-line="113" selection-start-column="4" selection-end-line="118" selection-end-column="0" />
           <folding>
-            <marker date="1499347492833" expanded="true" signature="3835:4244" ph="..." />
-            <marker date="1499347492833" expanded="true" signature="3973:4229" ph="..." />
-            <marker date="1499347492833" expanded="true" signature="4152:4210" ph="..." />
+            <element signature="n#!!block;n#addToCart#0" expanded="false" />
+            <element signature="n#!!block;n#fetchCatalog#0" expanded="false" />
+            <element signature="n#!!block;n#addItemToList#0" expanded="false" />
+            <element signature="n#!!block;n#fetchCart#0" expanded="false" />
+            <element signature="n#!!block;n#saveCart#0" expanded="false" />
+            <marker date="1499350483535" expanded="true" signature="4193:4685" ph="..." />
+            <marker date="1499350483535" expanded="true" signature="4331:4670" ph="..." />
+            <marker date="1499350483535" expanded="true" signature="4510:4651" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/televisions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="117" column="5" lean-forward="false" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
+        <state relative-caret-position="204">
+          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
           <folding>
-            <marker date="1499347558607" expanded="true" signature="3756:4165" ph="..." />
-            <marker date="1499347558607" expanded="true" signature="3894:4150" ph="..." />
-            <marker date="1499347558607" expanded="true" signature="4073:4131" ph="..." />
+            <marker date="1499350539773" expanded="true" signature="4142:4634" ph="..." />
+            <marker date="1499350539773" expanded="true" signature="4280:4619" ph="..." />
+            <marker date="1499350539773" expanded="true" signature="4459:4600" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/laptops.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="116" column="5" lean-forward="false" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
+        <state relative-caret-position="238">
+          <caret line="110" column="5" lean-forward="true" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
           <folding>
-            <marker date="1499347558685" expanded="true" signature="3751:4160" ph="..." />
-            <marker date="1499347558685" expanded="true" signature="3889:4145" ph="..." />
-            <marker date="1499347558685" expanded="true" signature="4068:4126" ph="..." />
+            <marker date="1499350539842" expanded="true" signature="4208:4700" ph="..." />
+            <marker date="1499350539842" expanded="true" signature="4346:4685" ph="..." />
+            <marker date="1499350539842" expanded="true" signature="4525:4666" ph="..." />
           </folding>
         </state>
       </provider>
