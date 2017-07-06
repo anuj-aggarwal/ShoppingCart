@@ -1,7 +1,11 @@
 var catalog = [];   // Combined Catalog of all Categories
 var cartItems = {};
+var username;
 
 $(function () {
+    username = $('#username');
+    username.html("Welcome, " + localStorage.getItem('username')+" <i class='fa fa-caret-down'></i>");
+
     var clearButton = $("#clear-button");
     clearButton.click(function () {
         cartItems = {};

@@ -7,9 +7,13 @@ var brands = ["HP", "Dell", "Lenovo"];
 var excludeSelected;
 var onlyCOD;
 var onlyInStock;
+var username;
 
 // Window.OnLoad
 $(function () {
+    username = $('#username');
+    username.html("Welcome, " + localStorage.getItem('username')+" <i class='fa fa-caret-down'></i>");
+
     itemsList = $("#items");
     excludeSelected = $('#excludeSelected');
     onlyCOD = $('#onlycod');
