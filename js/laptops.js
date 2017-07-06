@@ -6,12 +6,14 @@ var cartItems = {}; // Cart as an object with Data-ID:quantity pairs
 var brands = ["HP", "Dell", "Lenovo"];
 var excludeSelected;
 var onlyCOD;
+var onlyInStock;
 
 // Window.OnLoad
 $(function () {
     itemsList = $("#items");
     excludeSelected = $('#excludeSelected');
     onlyCOD = $('#onlycod');
+    onlyInStock = $('#only-in-stock');
 
     fetchCart();
     fetchCatalog(catalog);
@@ -25,12 +27,15 @@ $(function () {
     $('#brands input').on('click', function () {
         showCatalog(catalog)
     });
-   excludeSelected.on('click', function(){
+    excludeSelected.on('click', function () {
         showCatalog(catalog);
     });
-    onlyCOD.on('click', function(){
+    onlyCOD.on('click', function () {
         showCatalog(catalog);
     });
+    onlyInStock.on('click', function () {
+        showCatalog(catalog);
+    })
 
 });
 
@@ -103,7 +108,6 @@ function showCatalog(catalog) {
 
     // APPLY THE BRAND FILTERS
     var brandsSelected = document.querySelectorAll("#brands input:checked");
-    console.log(brandsSelected);
     if (brandsSelected[0]) {
         catalog = catalog.filter(function (item) {
             var found = false;
@@ -116,28 +120,33 @@ function showCatalog(catalog) {
     }
 
     // Apply EXCLUDE SELECTED FILTER
-    if(excludeSelected.is(':checked')){
-        catalog = catalog.filter(function(item){
+    if (excludeSelected.is(':checked')) {
+        catalog = catalog.filter(function (item) {
             return !(cartItems[item.id]);
         });
     }
     // Apply COD Filter
-    if(onlyCOD.is(':checked')){
-        catalog = catalog.filter(function(item){
+    if (onlyCOD.is(':checked')) {
+        catalog = catalog.filter(function (item) {
             return !!(item.cod);
+        });
+    }
+    // Apply Out Of Stock Filter
+    if (onlyInStock.is(':checked')) {
+        catalog = catalog.filter(function (item) {
+            return !(item.outOfStock);
         });
     }
 
 
     // Show the Sorted and Filtered Catalog
     if (catalog[0]) {
-        console.log('hello');
         // Show the Sorted and Filtered Catalog
         itemsList.html("");
         for (var item of catalog) {
             addItemToList(item);
         }
-        $(".addCart").click(addToCart);
+        $(".addCart:enabled").click(addToCart);
     }
     else {
         itemsList.html("");
@@ -153,6 +162,10 @@ function addItemToList(item) {
     if (!quantity) {
         quantity = 0;
     }
+    var disabled = "";
+    if (item.outOfStock) {
+        disabled = "disabled";
+    }
     var newItem = $("<div class='col-sm-6 col-lg-4'>");
     newItem.html(
         `
@@ -161,7 +174,7 @@ function addItemToList(item) {
             <div class="card-block text-center">
                 <h4 class="card-title">${item.name}</h4>
                 <p class="card-text">₹ ${item.price}</p>
-                <button class="btn btn-outline-primary addCart">
+                <button class="btn btn-outline-primary addCart" ${disabled}>
                     Add to Cart
                     <span class="badge badge-pill badge-danger">${quantity}</span>
                 </button>

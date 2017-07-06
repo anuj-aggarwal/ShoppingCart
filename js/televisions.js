@@ -6,25 +6,36 @@ var cartItems = {}; // Cart as an object with Data-ID:quantity pairs
 var brands = ["Samsung", "LG", "Sony"];
 var excludeSelected;
 var onlyCOD;
+var onlyInStock;
 
 // Window.OnLoad
 $(function () {
     itemsList = $("#items");
     excludeSelected = $('#excludeSelected');
     onlyCOD = $('#onlycod');
+    onlyInStock = $('#only-in-stock');
 
     fetchCart();
     fetchCatalog(catalog);
 
-    $(document).on('change', '#sort-select', function(){showCatalog(catalog)});
-    $('#price-filter-button').on('click', function(){showCatalog(catalog);});
-    $('#brands input').on('click', function(){showCatalog(catalog)});
-    excludeSelected.on('click', function(){
+    $(document).on('change', '#sort-select', function () {
+        showCatalog(catalog)
+    });
+    $('#price-filter-button').on('click', function () {
         showCatalog(catalog);
     });
-    onlyCOD.on('click', function(){
+    $('#brands input').on('click', function () {
+        showCatalog(catalog)
+    });
+    excludeSelected.on('click', function () {
         showCatalog(catalog);
     });
+    onlyCOD.on('click', function () {
+        showCatalog(catalog);
+    });
+    onlyInStock.on('click', function () {
+        showCatalog(catalog);
+    })
 
 });
 
@@ -50,20 +61,20 @@ function fetchCatalog() {
     $.getJSON("data/televisions.json", function (data) {
         catalog = data;
         // Find minimum Price and update min-price
-        $("#min-price").attr('value', catalog.reduce(function(a, b){
-            if(a==catalog[0]){
+        $("#min-price").attr('value', catalog.reduce(function (a, b) {
+            if (a == catalog[0]) {
                 return Math.min(a.price, b.price);
             }
-            else{
+            else {
                 return Math.min(a, b.price);
             }
         }));
         // Find maximum Price and update max-price
-        $("#max-price").attr('value', catalog.reduce(function(a, b){
-            if(a==catalog[0]){
+        $("#max-price").attr('value', catalog.reduce(function (a, b) {
+            if (a == catalog[0]) {
                 return Math.max(a.price, b.price);
             }
-            else{
+            else {
                 return Math.max(a, b.price);
             }
         }));
@@ -83,7 +94,7 @@ function showCatalog(catalog) {
         });
     }
     else if (id == 1) {    // Sort in descending order
-        catalog =  catalog.sort(function (item1, item2) {
+        catalog = catalog.sort(function (item1, item2) {
             return item2.price - item1.price;
         });
     }
@@ -92,18 +103,17 @@ function showCatalog(catalog) {
     var minPrice = Number($("#min-price").val());
     var maxPrice = Number($("#max-price").val());
 
-    catalog = catalog.filter(function(item) {
+    catalog = catalog.filter(function (item) {
         return item.price >= minPrice && item.price <= maxPrice;
     });
 
     // APPLY THE BRAND FILTERS
     var brandsSelected = document.querySelectorAll("#brands input:checked");
-    console.log(brandsSelected);
-    if(brandsSelected[0]){
-        catalog = catalog.filter(function(item){
+    if (brandsSelected[0]) {
+        catalog = catalog.filter(function (item) {
             var found = false;
-            for(var i of brandsSelected){
-                if(item.brand==i.value)
+            for (var i of brandsSelected) {
+                if (item.brand == i.value)
                     found = true;
             }
             return found;
@@ -111,30 +121,34 @@ function showCatalog(catalog) {
     }
 
     // Apply EXCLUDE SELECTED FILTER
-    if(excludeSelected.is(':checked')){
-        catalog = catalog.filter(function(item){
+    if (excludeSelected.is(':checked')) {
+        catalog = catalog.filter(function (item) {
             return !(cartItems[item.id]);
         });
     }
     // Apply COD Filter
-    if(onlyCOD.is(':checked')){
-        catalog = catalog.filter(function(item){
+    if (onlyCOD.is(':checked')) {
+        catalog = catalog.filter(function (item) {
             return !!(item.cod);
         });
     }
-
+    // Apply Out Of Stock Filter
+    if (onlyInStock.is(':checked')) {
+        catalog = catalog.filter(function (item) {
+            return !(item.outOfStock);
+        });
+    }
 
     // Show the Sorted and Filtered Catalog
     if (catalog[0]) {
-        console.log('hello');
         // Show the Sorted and Filtered Catalog
         itemsList.html("");
         for (var item of catalog) {
             addItemToList(item);
         }
-        $(".addCart").click(addToCart);
+        $(".addCart:enabled").click(addToCart);
     }
-    else{
+    else {
         itemsList.html("");
         itemsList.append(`
                 <div class="h1 text-center text-primary my-5 mx-5">Sorry, no results matched</div>
@@ -148,6 +162,10 @@ function addItemToList(item) {
     if (!quantity) {
         quantity = 0;
     }
+    var disabled = "";
+    if (item.outOfStock) {
+        disabled = "disabled";
+    }
     var newItem = $("<div class='col-sm-6 col-lg-4'>");
     newItem.html(
         `
@@ -156,7 +174,7 @@ function addItemToList(item) {
             <div class="card-block text-center">
                 <h4 class="card-title">${item.name}</h4>
                 <p class="card-text">₹ ${item.price}</p>
-                <button class="btn btn-outline-primary addCart">
+                <button class="btn btn-outline-primary addCart" ${disabled}>
                     Add to Cart
                     <span class="badge badge-pill badge-danger">${quantity}</span>
                 </button>
@@ -166,7 +184,6 @@ function addItemToList(item) {
     );
     itemsList.append(newItem);
 }
-
 
 
 // Get the Cart from the local Storage

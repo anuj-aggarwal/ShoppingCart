@@ -51,7 +51,9 @@
 						<!-- BRAND NAME AND SEARCH BAR -->
 						<div class="col">
 							<!-- BRAND NAME -->
-							<a href="index.html"><div class="text-white h1">Electrozaar</div></a>
+							<a href="index.html">
+								<div class="text-white h1">Electrozaar</div>
+							</a>
 							<!-- SEARCH BAR -->
 							<div class="row">
 								<div class="col-lg-12">
@@ -169,20 +171,22 @@
 						<div class="row sidebar text-center">
 							<div class="h2">Filters</div>
 							<div class="filter">
-								<div class="h4">Price: </div>
+								<div class="h4">Price:</div>
 								<div class="row">
 									<div class="col">
 										<label for="rs-addon1">Min. Price</label>
 										<div class="input-group">
 											<span class="input-group-addon" id="rs-addon1">₹</span>
-											<input type="number" class="form-control" id="min-price" aria-describedby="rs-addon1">
+											<input type="number" class="form-control" id="min-price"
+											       aria-describedby="rs-addon1">
 										</div>
 									</div>
 									<div class="col">
 										<label for="rs-addon2">Max. Price</label>
 										<div class="input-group">
 											<span class="input-group-addon" id="rs-addon2">₹</span>
-											<input type="number" class="form-control" id="max-price" aria-describedby="rs-addon2">
+											<input type="number" class="form-control" id="max-price"
+											       aria-describedby="rs-addon2">
 										</div>
 									</div>
 								</div>
@@ -201,10 +205,15 @@
 								</div>
 							</div>
 						</div>
-						
 						<div class="row sidebar text-center">
 							<div class="filter mx-auto">
-								<label><input type="checkbox" id="excludeSelected"> Exclude already Selected Items</label>
+								<label><input type="checkbox" id="only-in-stock"> Exclude Out of Stock</label>
+							</div>
+						</div>
+						<div class="row sidebar text-center">
+							<div class="filter mx-auto">
+								<label><input type="checkbox" id="excludeSelected"> Exclude already Selected
+									Items</label>
 							</div>
 						</div>
 						<div class="row sidebar text-center">
@@ -212,7 +221,7 @@
 								<label><input type="checkbox" id="onlycod"> Only with COD Available</label>
 							</div>
 						</div>
-						
+					
 					</div>
 				</div>
 			</div>

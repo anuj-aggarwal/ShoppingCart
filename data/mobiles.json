@@ -12,7 +12,8 @@
     "brand": "Xiaomi",
     "name": "Redmi Note 4(Black, 64 GB)",
     "price": 12999,
-    "url": "images/mobiles/redmi-note4.jpg"
+    "url": "images/mobiles/redmi-note4.jpg",
+    "outOfStock": true
   },
   {
     "id": "0.2",
@@ -20,7 +21,8 @@
     "name": "Apple iPhone 7 Plus(Black, 32 GB)",
     "price": 61199,
     "url": "images/mobiles/iphone-7plus.jpeg",
-    "cod": true
+    "cod": true,
+    "outOfStock": true
   },
   {
     "id": "0.3",
@@ -58,7 +60,8 @@
     "brand": "Motorola",
     "name": "Moto G5 Plus(Lunar Grey, 32 GB)",
     "price": 16999,
-    "url": "images/mobiles/moto-g5plus.jpeg"
+    "url": "images/mobiles/moto-g5plus.jpeg",
+    "outOfStock": true
   },
   {
     "id": "0.8",
