@@ -3,6 +3,7 @@
 var itemsList;  // Bootstrap row containing all Item Cards
 var catalog = [];   // Catalog as an Array of objects
 var cartItems = {}; // Cart as an object with Data-ID:quantity pairs
+var brands = ["OnePlus", "Xiaomi", "Apple", "Samsung", "Motorola"];
 
 // Window.OnLoad
 $(function () {
@@ -13,7 +14,7 @@ $(function () {
 
     $(document).on('change', '#sort-select', function(){showCatalog(catalog)});
     $('#price-filter-button').on('click', function(){showCatalog(catalog);});
-
+    $('#brands input').on('click', function(){showCatalog(catalog)});
 });
 
 // Add the Item in event.target's Card to the catalog
@@ -76,7 +77,7 @@ function showCatalog(catalog) {
         });
     }
 
-    // APPLY THE FILTERS
+    // APPLY THE PRICE FILTERS
     var minPrice = Number($("#min-price").val());
     var maxPrice = Number($("#max-price").val());
 
@@ -84,6 +85,19 @@ function showCatalog(catalog) {
         return item.price >= minPrice && item.price <= maxPrice;
     });
 
+    // APPLY THE BRAND FILTERS
+    var brandsSelected = document.querySelectorAll("#brands input:checked");
+    console.log(brandsSelected);
+    if(brandsSelected[0]){
+        catalog = catalog.filter(function(item){
+            var found = false;
+            for(var i of brandsSelected){
+                if(item.brand==i.value)
+                    found = true;
+            }
+            return found;
+        });
+    }
 
     // Show the Sorted and Filtered Catalog
     itemsList.html("");

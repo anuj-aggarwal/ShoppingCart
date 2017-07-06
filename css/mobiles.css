@@ -99,11 +99,6 @@ button {
 }
 
 
-
-
-
-
-
 .card { /* GIVE SPACING BETWEEN CARDS */
     margin: 5% 5% 5% 5%;
     height: 90%;
@@ -116,7 +111,10 @@ button {
     background-color: #f1f1f1;
 }
 
-
+.filter {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 footer {
     width:100%;
