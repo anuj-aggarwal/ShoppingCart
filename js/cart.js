@@ -15,7 +15,7 @@ $(function () {
     $("#checkout-button").click(function () {
         if (Object.keys(cartItems).length != 0) {
             $("#checkout-modal-heading").text("Success");
-            $("#checkout-modal-body").text("Thank you for shopping with us! We hope you like our services.....");
+            $("#checkout-modal-body").html(`Thank you for shopping with us! We hope you like our services.....\n<b>Total Bill</b>: <b>${$('#table-total').text()}</b>`);
             clearButton.click();
         }
         else {
