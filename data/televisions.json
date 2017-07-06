@@ -4,7 +4,8 @@
     "brand": "Samsung",
     "name": "Samsung 80cm (32) Full HD Smart LED TV  (32K5570, 3 x HDMI, 2 x USB)",
     "price": 35999,
-    "url": "images/televisions/0.jpeg"
+    "url": "images/televisions/0.jpeg",
+    "cod": true
   },
   {
     "id": "2.1",
@@ -18,7 +19,8 @@
     "brand": "Samsung",
     "name": "Samsung 138cm (55) Ultra HD (4K) Smart LED TV  (55KU6470, 3 x HDMI, 2 x USB)",
     "price": 129900,
-    "url": "images/televisions/2.jpeg"
+    "url": "images/televisions/2.jpeg",
+    "cod": true
   },
   {
     "id": "2.3",
@@ -53,14 +55,16 @@
     "brand": "LG",
     "name": "LG 108cm (43) Full HD Smart LED TV  (43LH576T, 2 x HDMI, 1 x USB)",
     "price": 39999,
-    "url": "images/televisions/7.jpeg"
+    "url": "images/televisions/7.jpeg",
+    "cod": true
   },
   {
     "id": "2.8",
     "brand": "Sony",
     "name": "Sony Bravia 101.6cm (40) Full HD Smart LED TV  (KLV-40W562D, 2 x HDMI, 2 x USB)",
     "price": 49999,
-    "url": "images/televisions/8.jpeg"
+    "url": "images/televisions/8.jpeg",
+    "cod": true
   },
   {
     "id": "2.9",
@@ -74,6 +78,7 @@
     "brand": "Sony",
     "name": "Sony Bravia 163.9cm (65) Ultra HD (4K) Smart LED TV  (KD-65X9300D, 4 x HDMI, 3 x USB)",
     "price": 309999,
-    "url": "images/televisions/10.jpeg"
+    "url": "images/televisions/10.jpeg",
+    "cod": true
   }
 ]

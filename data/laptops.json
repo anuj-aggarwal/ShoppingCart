@@ -4,14 +4,16 @@
     "brand": "HP",
     "name": "HP Core i3 6th Gen - (4 GB/1 TB HDD/DOS) 15-be017TU Notebook  (15.6 inch, Blue)",
     "price": 29490,
-    "url": "images/laptops/0.jpeg"
+    "url": "images/laptops/0.jpeg",
+    "cod": true
   },
   {
     "id": "1.1",
     "brand": "HP",
     "name": "HP Pavilion Core i7 7th Gen - (12 GB/1 TB HDD/128 GB SSD/Windows 10 Home/4 GB Graphics) 14-AL110TX Notebook  (14 inch, Modern Gold, 1.78 kg)",
     "price": 94000,
-    "url": "images/laptops/1.jpeg"
+    "url": "images/laptops/1.jpeg",
+    "cod": true
   },
   {
     "id": "1.2",
@@ -32,7 +34,8 @@
     "brand": "HP",
     "name": "HP OMEN Core i5 7th Gen - (16 GB/1 TB HDD/128 GB SSD/Windows 10 Home/4 GB Graphics) 15-ax249TX Notebook  (15.6 inch, Black)",
     "price": 99990,
-    "url": "images/laptops/4.jpeg"
+    "url": "images/laptops/4.jpeg",
+    "cod": true
   },
   {
     "id": "1.5",
@@ -46,7 +49,8 @@
     "brand": "Dell",
     "name": "Dell Inspiron 5000 Core i5 7th Gen - (8 GB/2 TB HDD/Windows 10 Home/2 GB Graphics) 5567 Notebook  (15.6 inch, Black)",
     "price": 60990,
-    "url": "images/laptops/6.jpeg"
+    "url": "images/laptops/6.jpeg",
+    "cod": true
   },
   {
     "id": "1.7",
@@ -67,6 +71,7 @@
     "brand": "Lenovo",
     "name": "Lenovo G50-80 Core i3 5th Gen - (4 GB/1 TB HDD/DOS/2 GB Graphics) G50-80 Notebook  (15.6 inch, Black, 2.5 kg)",
     "price": 34990,
-    "url": "images/laptops/9.jpeg"
+    "url": "images/laptops/9.jpeg",
+    "cod": true
   }
 ]

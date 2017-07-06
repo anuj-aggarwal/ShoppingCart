@@ -4,7 +4,8 @@
     "brand": "OnePlus",
     "name": "OnePlus 5(Slate Gray, 6GB RAM + 64 GB memory)",
     "price": 32999,
-    "url": "images/mobiles/oneplus-5.jpg"
+    "url": "images/mobiles/oneplus-5.jpg",
+    "cod": true
   },
   {
     "id": "0.1",
@@ -18,28 +19,32 @@
     "brand": "Apple",
     "name": "Apple iPhone 7 Plus(Black, 32 GB)",
     "price": 61199,
-    "url": "images/mobiles/iphone-7plus.jpeg"
+    "url": "images/mobiles/iphone-7plus.jpeg",
+    "cod": true
   },
   {
     "id": "0.3",
     "brand": "Apple",
     "name": "Apple iPhone 7(Black, 32 GB)",
     "price": 47699,
-    "url": "images/mobiles/iphone-7.jpeg"
+    "url": "images/mobiles/iphone-7.jpeg",
+    "cod": true
   },
   {
     "id": "0.4",
     "brand": "Apple",
     "name": "Apple iPhone 7(Black, 128 GB)",
     "price": 56499,
-    "url": "images/mobiles/iphone-7.jpeg"
+    "url": "images/mobiles/iphone-7.jpeg",
+    "cod": true
   },
   {
     "id": "0.5",
     "brand": "Apple",
     "name": "Apple iPhone 7 Plus(Black, 128 GB)",
     "price": 69999,
-    "url": "images/mobiles/iphone-7plus.jpeg"
+    "url": "images/mobiles/iphone-7plus.jpeg",
+    "cod": true
   },
   {
     "id": "0.6",

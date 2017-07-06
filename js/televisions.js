@@ -3,13 +3,15 @@
 var itemsList;  // Bootstrap row containing all Item Cards
 var catalog = [];   // Catalog as an Array of objects
 var cartItems = {}; // Cart as an object with Data-ID:quantity pairs
-var brands = ["Samsung", "LG", "Sony"]
+var brands = ["Samsung", "LG", "Sony"];
 var excludeSelected;
+var onlyCOD;
 
 // Window.OnLoad
 $(function () {
     itemsList = $("#items");
     excludeSelected = $('#excludeSelected');
+    onlyCOD = $('#onlycod');
 
     fetchCart();
     fetchCatalog(catalog);
@@ -18,6 +20,9 @@ $(function () {
     $('#price-filter-button').on('click', function(){showCatalog(catalog);});
     $('#brands input').on('click', function(){showCatalog(catalog)});
     excludeSelected.on('click', function(){
+        showCatalog(catalog);
+    });
+    onlyCOD.on('click', function(){
         showCatalog(catalog);
     });
 
@@ -105,10 +110,17 @@ function showCatalog(catalog) {
         });
     }
 
+    // Apply EXCLUDE SELECTED FILTER
     if(excludeSelected.is(':checked')){
         catalog = catalog.filter(function(item){
             return !(cartItems[item.id]);
-        })
+        });
+    }
+    // Apply COD Filter
+    if(onlyCOD.is(':checked')){
+        catalog = catalog.filter(function(item){
+            return !!(item.cod);
+        });
     }
 
 
