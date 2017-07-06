@@ -8,19 +8,19 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		
 		<!-- TITLE and FAVICON -->
-		<title>Cart</title>
+		<title>Laptops</title>
 		<link rel="shortcut icon" type="image/png" href="images/icon.png">
 		
 		<!-- STYLESHEETS -->
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/cart.css">
+		<link rel="stylesheet" href="css/laptops.css">
 		
 		<!-- SCRIPTS -->
 		<script src="js/jquery.js"></script>
 		<script src="js/tether.min.js"></script>
 		<script src="js/bootstrap.js"></script>
-		<script src="js/cart.js"></script>
+		<script src="js/laptops.js"></script>
 	
 	</head>
 	<body>
@@ -68,7 +68,7 @@
 						
 						<!-- BUTTON TO CART -->
 						<div class="col-2 text-right btn-group-vertical">
-							<button class="btn active" id="cart-button">
+							<button class="btn" id="cart-button">
 								<i class="fa fa-shopping-cart fa-3x"></i>
 								<span class="h1">Cart</span>
 							</button>
@@ -116,85 +116,57 @@
 		</header>   <!-- MAIN HEADER END -->
 		
 		
-		<div class="display-1 font-weight-bold text-center" id="cart-heading">Cart</div>
-		
-		
-		
-		
-		
+		<div class="display-1 font-weight-bold text-center" id="laptops-heading">Laptops</div>
 		
 		<div class="container-fluid">
-			
-			<div class="text-right my-2">
-				<button class="btn btn-danger mx-2" id="clear-button">Remove All</button>
-				<button class="btn btn-success" data-toggle="modal" data-target="#proceed-modal" id="proceed-button">Proceed</button>
-			</div>
-			
-			<!-- Modal -->
-			<div class="modal fade" id="proceed-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h4 class="modal-title mx-auto" id="proceed-modal-heading"></h4>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
+			<div class="row">
+				<!-- MAIN CONTENT -->
+				<div class="col-9">
+					<div class="row" id="items">
+						<!-- CARDS TO BE ADDED IN JS HERE -->
+					</div>
+				</div>
+				<!-- SIDEBAR FOR FILTERS AND SORT -->
+				<div class="col-3">
+					<div class="container">
+						<div class="row sidebar">
+							<div class="form-group">
+								<label class="h3" for="sort-select">Sort By: </label>
+								<select class="form-control" id="sort-select">
+									<option value="0">Price: Low to High</option>
+									<option value="1">Price: High to Low</option>
+								</select>
+							</div>
 						</div>
-						<div class="modal-body text-center" id="proceed-modal-body">
-						
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary mx-auto px-3" data-dismiss="modal">
-								<i class="fa fa-check"></i>
-								OK
-							</button>
+						<div class="row sidebar text-center">
+							<div class="h2">Filters</div>
+							<div class="filter">
+								<div class="h4">Price: </div>
+								<div class="row">
+									<div class="col">
+										<label for="rs-addon1">Min. Price</label>
+										<div class="input-group">
+											<span class="input-group-addon" id="rs-addon1">₹</span>
+											<input type="number" class="form-control" id="min-price" aria-describedby="rs-addon1">
+										</div>
+									</div>
+									<div class="col">
+										<label for="rs-addon2">Max. Price</label>
+										<div class="input-group">
+											<span class="input-group-addon" id="rs-addon2">₹</span>
+											<input type="number" class="form-control" id="max-price" aria-describedby="rs-addon2">
+										</div>
+									</div>
+								</div>
+								<div class="mt-2">
+									<button class="btn btn-primary" id="price-filter-button">Apply</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
-			
-			
-			<table class="table table-bordered">
-				<thead class="bg-primary text-white">
-					<tr>
-						<th width="900px">Item Name</th>
-						<th>Price</th>
-						<th>Quantity</th>
-						<th>Amount</th>
-					</tr>
-				</thead>
-				<tbody id="table-body">
-				
-				</tbody>
-				<thead class="bg-primary text-white">
-					<tr>
-						<th colspan="3">TOTAL</th>
-						<th id="table-total">₹ 0.0</th>
-					</tr>
-				</thead>
-			</table>
-		
 		</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		<!-- FOOTER -->

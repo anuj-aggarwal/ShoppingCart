@@ -64,12 +64,28 @@ function fetchCart() {
 
 // Fetches Catalog from all Categories and combines them into one
 function fetchCatalog() {
-    // TO BE IMPLEMENTED
-    // Temporary Implmentation
+    var count = 0;
     $.getJSON("data/mobiles.json", function (data) {
-        catalog = [data];
-        showCart();
-    })
+        catalog[0] = data;
+        ++count;
+        if(count==3){
+            showCart();
+        }
+    });
+    $.getJSON("data/laptops.json", function (data) {
+        catalog[1] = data;
+        ++count;
+        if(count==3){
+            showCart();
+        }
+    });
+    $.getJSON("data/televisions.json", function (data) {
+        catalog[2] = data;
+        ++count;
+        if(count==3){
+            showCart();
+        }
+    });
 }
 
 function showCart() {
@@ -90,15 +106,29 @@ function addItemToTable(id) {
     var category = id.split(".")[0];
     var itemId = id.split(".")[1];
     var item = catalog[category][itemId];
-
     var newItem = $(`<tr data-id="${id}">`);
+
+    var paddingX, paddingY;
+    if(category == 0){
+        paddingX = 5;
+        paddingY = 2;
+    }
+    else if(category == 1){
+        paddingX = 1;
+        paddingY = 3;
+    }
+    else if(category == 2){
+        paddingX = 1;
+        paddingY = 2;
+    }
+
     newItem.html(
         `
             <td>
                 <div class="row">
                     <div class="col-4">
-                        <div class="card py-2" data-id="${item.id}">
-                        <img class="card-img-top img-fluid px-5" src="${item.url}" alt="Card image">
+                        <div class="card py-${paddingY}" data-id="${item.id}">
+                        <img class="card-img-top img-fluid px-${paddingX}" src="${item.url}" alt="Card image">
                     </div>
                     </div>
                     <div class="col-8">

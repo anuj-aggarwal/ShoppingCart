@@ -34,7 +34,7 @@ function addToCart(event) {
 // Get the catalog from mobiles.json,
 // update minimum and maximum Prices in Price Filter
 function fetchCatalog() {
-    $.getJSON("data/mobiles.json", function (data) {
+    $.getJSON("data/televisions.json", function (data) {
         catalog = data;
         // Find minimum Price and update min-price
         $("#min-price").attr('value', catalog.reduce(function(a, b){
@@ -98,7 +98,7 @@ function addItemToList(item) {
     newItem.html(
         `
         <div class="card py-2" data-id="${item.id}">
-            <img class="card-img-top img-fluid px-5" src="${item.url}" alt="Card image">
+            <img class="card-img-top img-fluid px-1" src="${item.url}" alt="Card image">
             <div class="card-block text-center">
                 <h4 class="card-title">${item.name}</h4>
                 <p class="card-text">₹ ${item.price}</p>
