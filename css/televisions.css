@@ -1,6 +1,9 @@
 #header {
     position: relative;
 }
+button {
+    cursor: pointer !important;
+}
 
 #tagline-container {
     background-color: #d32f2f;

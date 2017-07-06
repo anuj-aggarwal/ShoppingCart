@@ -1,6 +1,10 @@
 body {
     background-image: radial-gradient(#fff, #e0e0e0);
 }
+button {
+    cursor: pointer !important;
+}
+
 #header {
     position: relative;
 }
