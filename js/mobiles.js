@@ -18,6 +18,7 @@ $(function () {
 
 // Add the Item in event.target's Card to the catalog
 function addToCart(event) {
+    fetchCart();
     var idToAdd = $(event.target).closest("[data-id]").attr("data-id");
     if (cartItems[idToAdd]) {   // If Item already in Cart
         ++cartItems[idToAdd];   // Increase its quantity by 1

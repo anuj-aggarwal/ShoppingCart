@@ -12,15 +12,15 @@ $(function () {
         saveCart();
         showCart();
     });
-    $("#proceed-button").click(function () {
+    $("#checkout-button").click(function () {
         if (Object.keys(cartItems).length != 0) {
-            $("proceed-modal-heading").text("Success");
-            $("#proceed-modal-body").text("Thank you for shopping with us! We hope you like our services.....");
+            $("#checkout-modal-heading").text("Success");
+            $("#checkout-modal-body").text("Thank you for shopping with us! We hope you like our services.....");
             clearButton.click();
         }
         else {
-            $("#proceed-modal-heading").text("Cart Empty");
-            $("#proceed-modal-body").text("Your Cart is Empty. Please try again after selecting some items from Catalog. Thank you!");
+            $("#checkout-modal-heading").text("Cart Empty");
+            $("#checkout-modal-body").text("Your Cart is Empty. Please try again after selecting some items from Catalog. Thank you!");
         }
     });
 
@@ -29,6 +29,7 @@ $(function () {
 });
 
 function removeFromCart(event) {
+    fetchCart();
     var idToRemove = $(event.target).closest("[data-id]").attr("data-id");
     --cartItems[idToRemove];
     if (cartItems[idToRemove] == 0)
@@ -39,6 +40,7 @@ function removeFromCart(event) {
 }
 
 function addToCart(event) {
+    fetchCart();
     var idToAdd = $(event.target).closest("[data-id]").attr("data-id");
 
     if (cartItems[idToAdd]) {
