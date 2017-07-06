@@ -1,6 +1,9 @@
 #header {
     position: relative;
 }
+a:hover {
+    text-decoration: none;
+}
 button {
     cursor: pointer !important;
 }

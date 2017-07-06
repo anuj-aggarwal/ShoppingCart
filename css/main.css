@@ -1,6 +1,9 @@
 body {
     background-image: radial-gradient(#fff, #e0e0e0);
 }
+a:hover {
+    text-decoration: none;
+}
 button {
     cursor: pointer !important;
 }
