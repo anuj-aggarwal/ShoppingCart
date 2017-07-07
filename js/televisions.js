@@ -18,8 +18,8 @@ $(function () {
     if (user) {
         username.html(`Welcome, ${user} <i class='fa fa-caret-down'></i>`);
     }
-    else {
-        username.html(('Login / SignUp <i class="fa fa-caret-down"></i>'))
+    else{
+        username.html(('<a href="index.html">Login / SignUp <i class="fa fa-caret-down"></i></a>'))
     }
 
     itemsList = $("#items");
@@ -34,7 +34,7 @@ $(function () {
     $(document).on('change', '#sort-select', function () {
         showCatalog(catalog)
     });
-    $('#price-filter-button').on('click', function () {
+    priceFilterButton.on('click', function () {
         showCatalog(catalog);
     });
     $('#brands input').on('click', function () {
