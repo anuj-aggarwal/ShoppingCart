@@ -1,3 +1,6 @@
+* {
+    max-width: 1366px;
+}
 body {
     background-image: radial-gradient(#fff, #e0e0e0);
 }
