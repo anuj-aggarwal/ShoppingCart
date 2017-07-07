@@ -5,12 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/laptops.json" afterPath="$PROJECT_DIR$/data/laptops.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/mobiles.json" afterPath="$PROJECT_DIR$/data/mobiles.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/televisions.json" afterPath="$PROJECT_DIR$/data/televisions.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/laptops.js" afterPath="$PROJECT_DIR$/js/laptops.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/mobiles.js" afterPath="$PROJECT_DIR$/js/mobiles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/televisions.js" afterPath="$PROJECT_DIR$/js/televisions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laptops.html" afterPath="$PROJECT_DIR$/laptops.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobiles.html" afterPath="$PROJECT_DIR$/mobiles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/televisions.html" afterPath="$PROJECT_DIR$/televisions.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,90 +19,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mobiles.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/mobiles.js">
+      <file leaf-file-name="televisions.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/televisions.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="76" column="21" lean-forward="false" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
-              <folding>
-                <element signature="n#!!block;n#fetchCatalog#0" expanded="false" />
-                <element signature="n#!!block;n#addItemToList#0" expanded="false" />
-                <element signature="n#!!block;n#fetchCart#0" expanded="false" />
-                <element signature="n#!!block;n#saveCart#0" expanded="false" />
-                <marker date="1499410246082" expanded="true" signature="5584:6088" ph="..." />
-                <marker date="1499410246082" expanded="true" signature="5722:6073" ph="..." />
-                <marker date="1499410246082" expanded="true" signature="5913:6054" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="laptops.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/laptops.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="116" column="20" lean-forward="false" selection-start-line="116" selection-start-column="20" selection-end-line="116" selection-end-column="20" />
-              <folding>
-                <marker date="1499410285712" expanded="true" signature="5598:6102" ph="..." />
-                <marker date="1499410285712" expanded="true" signature="5927:6068" ph="..." />
-                <marker date="1499410285712" expanded="true" signature="5927:6087" ph="..." />
-                <marker date="1499410285712" expanded="true" signature="5927:6102" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="televisions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/televisions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="118" column="20" lean-forward="false" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
-              <folding>
-                <marker date="1499410285813" expanded="true" signature="5611:6115" ph="..." />
-                <marker date="1499410285813" expanded="true" signature="5749:6100" ph="..." />
-                <marker date="1499410285813" expanded="true" signature="5940:6081" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mobiles.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mobiles.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="181" column="36" lean-forward="false" selection-start-line="181" selection-start-column="36" selection-end-line="181" selection-end-column="36" />
-              <folding>
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="laptops.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/laptops.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="165" column="64" lean-forward="false" selection-start-line="165" selection-start-column="64" selection-end-line="165" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="televisions.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/televisions.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="178" column="48" lean-forward="true" selection-start-line="178" selection-start-column="48" selection-end-line="178" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="laptops.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/laptops.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+            <state relative-caret-position="297">
+              <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -127,8 +42,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>showC</find>
-      <find>additem</find>
       <find>add</find>
       <find>exclude</find>
       <find>.add</find>
@@ -154,10 +67,16 @@
       <find>username</find>
       <find>brands</find>
       <find>price</find>
-      <find>sort</find>
-      <find>select</find>
       <find>0.</find>
+      <find>select</find>
+      <find>sort</find>
+      <find>&lt;br&gt;</find>
+      <find>)&lt;/b&gt;</find>
     </findStrings>
+    <replaceStrings>
+      <replace>&lt;b&gt;</replace>
+      <replace>\&quot;)&lt;/b&gt;</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -188,8 +107,6 @@
         <option value="$PROJECT_DIR$/js/frontpage.js" />
         <option value="$PROJECT_DIR$/js/sell.js" />
         <option value="$PROJECT_DIR$/js/bidding.js" />
-        <option value="$PROJECT_DIR$/data/mobiles.json" />
-        <option value="$PROJECT_DIR$/data/televisions.json" />
         <option value="$PROJECT_DIR$/mobiles.html" />
         <option value="$PROJECT_DIR$/js/mobiles.js" />
         <option value="$PROJECT_DIR$/js/televisions.js" />
@@ -197,6 +114,8 @@
         <option value="$PROJECT_DIR$/laptops.html" />
         <option value="$PROJECT_DIR$/televisions.html" />
         <option value="$PROJECT_DIR$/data/laptops.json" />
+        <option value="$PROJECT_DIR$/data/mobiles.json" />
+        <option value="$PROJECT_DIR$/data/televisions.json" />
       </list>
     </option>
   </component>
@@ -391,12 +310,12 @@
       <workItem from="1499340644387" duration="10347000" />
       <workItem from="1499351149771" duration="912000" />
       <workItem from="1499352090385" duration="15781000" />
-      <workItem from="1499402328662" duration="7002000" />
+      <workItem from="1499402328662" duration="8264000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40241000" />
+    <option name="totallyTimeSpent" value="41503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -832,30 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/passwords.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/mobiles.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/televisions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/mobiles.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -872,28 +767,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/televisions.js">
+    <entry file="file://$PROJECT_DIR$/televisions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="118" column="20" lean-forward="false" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
-          <folding>
-            <marker date="1499410285813" expanded="true" signature="5611:6115" ph="..." />
-            <marker date="1499410285813" expanded="true" signature="5749:6100" ph="..." />
-            <marker date="1499410285813" expanded="true" signature="5940:6081" ph="..." />
-          </folding>
+        <state relative-caret-position="338">
+          <caret line="178" column="48" lean-forward="true" selection-start-line="178" selection-start-column="48" selection-end-line="178" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/laptops.js">
+    <entry file="file://$PROJECT_DIR$/laptops.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="116" column="20" lean-forward="false" selection-start-line="116" selection-start-column="20" selection-end-line="116" selection-end-column="20" />
-          <folding>
-            <marker date="1499410285712" expanded="true" signature="5598:6102" ph="..." />
-            <marker date="1499410285712" expanded="true" signature="5927:6068" ph="..." />
-            <marker date="1499410285712" expanded="true" signature="5927:6087" ph="..." />
-            <marker date="1499410285712" expanded="true" signature="5927:6102" ph="..." />
-          </folding>
+        <state relative-caret-position="202">
+          <caret line="165" column="64" lean-forward="false" selection-start-line="165" selection-start-column="64" selection-end-line="165" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -907,26 +793,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laptops.html">
+    <entry file="file://$PROJECT_DIR$/js/televisions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="165" column="64" lean-forward="false" selection-start-line="165" selection-start-column="64" selection-end-line="165" selection-end-column="64" />
-          <folding />
+        <state relative-caret-position="422">
+          <caret line="118" column="20" lean-forward="false" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
+          <folding>
+            <marker date="1499410285813" expanded="true" signature="5611:6115" ph="..." />
+            <marker date="1499410285813" expanded="true" signature="5749:6100" ph="..." />
+            <marker date="1499410285813" expanded="true" signature="5940:6081" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/televisions.html">
+    <entry file="file://$PROJECT_DIR$/data/passwords.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="178" column="48" lean-forward="true" selection-start-line="178" selection-start-column="48" selection-end-line="178" selection-end-column="48" />
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/laptops.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        <state relative-caret-position="221">
+          <caret line="13" column="51" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/mobiles.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/laptops.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="196" column="37" lean-forward="false" selection-start-line="196" selection-start-column="37" selection-end-line="196" selection-end-column="37" />
+          <folding>
+            <marker date="1499410285712" expanded="true" signature="5598:6102" ph="..." />
+            <marker date="1499410285712" expanded="true" signature="5927:6068" ph="..." />
+            <marker date="1499410285712" expanded="true" signature="5927:6087" ph="..." />
+            <marker date="1499410285712" expanded="true" signature="5927:6102" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/televisions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
           <folding />
         </state>
       </provider>

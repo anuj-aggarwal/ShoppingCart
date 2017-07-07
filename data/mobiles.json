@@ -2,7 +2,7 @@
   {
     "id": "0.0",
     "brand": "OnePlus",
-    "name": "OnePlus 5(Slate Gray, 6GB RAM + 64 GB memory)",
+    "name": "<b>OnePlus 5</b><br>(Slate Gray, 64 GB memory)",
     "price": 32999,
     "popularity": 10,
     "url": "images/mobiles/oneplus-5.jpg",
@@ -11,7 +11,7 @@
   {
     "id": "0.1",
     "brand": "Xiaomi",
-    "name": "Redmi Note 4(Black, 64 GB)",
+    "name": "<b>Redmi Note 4</b><br>(Black, 64 GB)",
     "price": 12999,
     "popularity": 8,
     "url": "images/mobiles/redmi-note4.jpg",
@@ -20,7 +20,7 @@
   {
     "id": "0.2",
     "brand": "Apple",
-    "name": "Apple iPhone 7 Plus(Black, 32 GB)",
+    "name": "<b>Apple iPhone 7 Plus</b><br>(Black, 32 GB)",
     "price": 61199,
     "popularity": 6,
     "url": "images/mobiles/iphone-7plus.jpeg",
@@ -30,7 +30,7 @@
   {
     "id": "0.3",
     "brand": "Apple",
-    "name": "Apple iPhone 7(Black, 32 GB)",
+    "name": "<b>Apple iPhone 7</b><br>(Black, 32 GB)",
     "price": 47699,
     "popularity": 10,
     "url": "images/mobiles/iphone-7.jpeg",
@@ -39,7 +39,7 @@
   {
     "id": "0.4",
     "brand": "Apple",
-    "name": "Apple iPhone 7(Black, 128 GB)",
+    "name": "<b>Apple iPhone 7</b><br>(Black, 128 GB)",
     "price": 56499,
     "popularity": 8,
     "url": "images/mobiles/iphone-7.jpeg",
@@ -48,7 +48,7 @@
   {
     "id": "0.5",
     "brand": "Apple",
-    "name": "Apple iPhone 7 Plus(Black, 128 GB)",
+    "name": "<b>Apple iPhone 7 Plus</b><br>(Black, 128 GB)",
     "price": 69999,
     "popularity": 9,
     "url": "images/mobiles/iphone-7plus.jpeg",
@@ -57,7 +57,7 @@
   {
     "id": "0.6",
     "brand": "Samsung",
-    "name": "Samsung Galaxy S8 Plus(Midnight Black, 128 GB)",
+    "name": "<b>Samsung Galaxy S8 Plus</b><br>(Midnight Black, 128 GB)",
     "price": 74900,
     "popularity": 9,
     "url": "images/mobiles/s8-plus.jpeg"
@@ -65,7 +65,7 @@
   {
     "id": "0.7",
     "brand": "Motorola",
-    "name": "Moto G5 Plus(Lunar Grey, 32 GB)",
+    "name": "<b>Moto G5 Plus</b><br>(Lunar Grey, 32 GB)",
     "price": 16999,
     "popularity": 8,
     "url": "images/mobiles/moto-g5plus.jpeg",
@@ -75,7 +75,7 @@
     "id": "0.8",
     "brand": "Samsung",
     "popularity": 7,
-    "name": "Samsung Galaxy S6 Edge(Black Sapphire, 32 GB)",
+    "name": "<b>Samsung Galaxy S6 Edge</b><br>(Black Sapphire, 32 GB)",
     "price": 55999,
     "url": "images/mobiles/s6edge.jpeg"
   }
