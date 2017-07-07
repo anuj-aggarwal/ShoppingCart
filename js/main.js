@@ -18,6 +18,11 @@ $(function () {
     loginButton = $('#login-button');
     loginButton.click(login);
     $('#guest-button').click(function(){localStorage.removeItem('username');});
+    $('#username,#password').on('keypress', function(event){
+        if(event.keyCode==13){
+            loginButton.click();
+        }
+    });
 });
 
 function login(){

@@ -8,16 +8,17 @@ var excludeSelected;
 var onlyCOD;
 var onlyInStock;
 var username;
+var priceFilterButton;
 
 // Window.OnLoad
 $(function () {
     $('.loader-container').fadeOut('slow');
     username = $('#username');
     var user = localStorage.getItem('username');
-    if(user) {
+    if (user) {
         username.html(`Welcome, ${user} <i class='fa fa-caret-down'></i>`);
     }
-    else{
+    else {
         username.html(('Login / SignUp <i class="fa fa-caret-down"></i>'))
     }
 
@@ -25,6 +26,7 @@ $(function () {
     excludeSelected = $('#excludeSelected');
     onlyCOD = $('#onlycod');
     onlyInStock = $('#only-in-stock');
+    priceFilterButton = $('#price-filter-button');
 
     fetchCart();
     fetchCatalog(catalog);
@@ -46,7 +48,12 @@ $(function () {
     });
     onlyInStock.on('click', function () {
         showCatalog(catalog);
-    })
+    });
+    $('#min-price, #max-price').on('keypress', function (event) {
+        if (event.keyCode == 13) {
+            priceFilterButton.click();
+        }
+    });
 
 });
 
