@@ -17,6 +17,7 @@ $(function () {
     modalContinue = $('#continue-button');
     loginButton = $('#login-button');
     loginButton.click(login);
+    $('#guest-button').click(function(){localStorage.removeItem('username');});
 });
 
 function login(){
@@ -42,7 +43,7 @@ function login(){
     else{
         modalHead.text('Wrong Credentials');
         modalHead.addClass('text-danger');
-        modalBody.text('Oops, The username and password does not match.....!!')
+        modalBody.html('Oops, The username and password does not match.....!!<br>Try again or Continue as a guest')
         modalBody.css('color','black');
         modalContinue.attr('hidden', true);
     }
