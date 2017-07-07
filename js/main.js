@@ -10,6 +10,7 @@ var password;
 var matched = false;
 
 $(function () {
+    setTimeout(function(){$('.loader-container').fadeOut('slow')}, 1000);
     fetchUserData();
     modalHead = $('#modal-title');
     modalBody = $('#modal-body');
