@@ -4,6 +4,7 @@
     "brand": "OnePlus",
     "name": "OnePlus 5(Slate Gray, 6GB RAM + 64 GB memory)",
     "price": 32999,
+    "popularity": 10,
     "url": "images/mobiles/oneplus-5.jpg",
     "cod": true
   },
@@ -12,6 +13,7 @@
     "brand": "Xiaomi",
     "name": "Redmi Note 4(Black, 64 GB)",
     "price": 12999,
+    "popularity": 8,
     "url": "images/mobiles/redmi-note4.jpg",
     "outOfStock": true
   },
@@ -20,6 +22,7 @@
     "brand": "Apple",
     "name": "Apple iPhone 7 Plus(Black, 32 GB)",
     "price": 61199,
+    "popularity": 6,
     "url": "images/mobiles/iphone-7plus.jpeg",
     "cod": true,
     "outOfStock": true
@@ -29,6 +32,7 @@
     "brand": "Apple",
     "name": "Apple iPhone 7(Black, 32 GB)",
     "price": 47699,
+    "popularity": 10,
     "url": "images/mobiles/iphone-7.jpeg",
     "cod": true
   },
@@ -37,6 +41,7 @@
     "brand": "Apple",
     "name": "Apple iPhone 7(Black, 128 GB)",
     "price": 56499,
+    "popularity": 8,
     "url": "images/mobiles/iphone-7.jpeg",
     "cod": true
   },
@@ -45,6 +50,7 @@
     "brand": "Apple",
     "name": "Apple iPhone 7 Plus(Black, 128 GB)",
     "price": 69999,
+    "popularity": 9,
     "url": "images/mobiles/iphone-7plus.jpeg",
     "cod": true
   },
@@ -53,6 +59,7 @@
     "brand": "Samsung",
     "name": "Samsung Galaxy S8 Plus(Midnight Black, 128 GB)",
     "price": 74900,
+    "popularity": 9,
     "url": "images/mobiles/s8-plus.jpeg"
   },
   {
@@ -60,12 +67,14 @@
     "brand": "Motorola",
     "name": "Moto G5 Plus(Lunar Grey, 32 GB)",
     "price": 16999,
+    "popularity": 8,
     "url": "images/mobiles/moto-g5plus.jpeg",
     "outOfStock": true
   },
   {
     "id": "0.8",
     "brand": "Samsung",
+    "popularity": 7,
     "name": "Samsung Galaxy S6 Edge(Black Sapphire, 32 GB)",
     "price": 55999,
     "url": "images/mobiles/s6edge.jpeg"

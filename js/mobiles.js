@@ -105,12 +105,17 @@ function showCatalog(catalog) {
 
     // SORT THE CATALOG
     var id = $("#sort-select").find('option:selected').attr('value');
-    if (id == 0) {    // Sort in Ascending Order
+    if(id==0){
+        catalog = catalog.sort(function (item1, item2) {
+            return item2.popularity - item1.popularity;
+        });
+    }
+    else if (id == 1) {    // Sort in Ascending Order
         catalog = catalog.sort(function (item1, item2) {
             return item1.price - item2.price;
         });
     }
-    else if (id == 1) {    // Sort in descending order
+    else if (id == 2) {    // Sort in descending order
         catalog = catalog.sort(function (item1, item2) {
             return item2.price - item1.price;
         });

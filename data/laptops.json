@@ -4,7 +4,8 @@
     "brand": "HP",
     "name": "HP Core i3 6th Gen - (4 GB/1 TB HDD/DOS) 15-be017TU Notebook  (15.6 inch, Blue)",
     "price": 29490,
-    "url": "images/laptops/0.jpeg",
+    "popularity": 9,
+    "url": "images/laptops/4.jpeg",
     "cod": true
   },
   {
@@ -12,6 +13,7 @@
     "brand": "HP",
     "name": "HP Pavilion Core i7 7th Gen - (12 GB/1 TB HDD/128 GB SSD/Windows 10 Home/4 GB Graphics) 14-AL110TX Notebook  (14 inch, Modern Gold, 1.78 kg)",
     "price": 94000,
+    "popularity": 8,
     "url": "images/laptops/1.jpeg",
     "cod": true
   },
@@ -20,6 +22,7 @@
     "brand": "HP",
     "name": "HP Envy Core i5 6th Gen - (4 GB/256 GB SSD/Windows 10 Home) 13-d015TU Notebook  (13.3 inch, Natural SIlver, 1.275 kg)",
     "price": 79900,
+    "popularity": 7,
     "url": "images/laptops/2.jpeg",
     "outOfStock": true
   },
@@ -28,6 +31,7 @@
     "brand": "HP",
     "name": "HP ProBook Core i5 7th Gen - (8 GB/1 TB HDD/Windows 10 Pro) 430 Notebook  (13.3 inch, Silver, 1.49 kg)",
     "price": 63890,
+    "popularity": 4,
     "url": "images/laptops/3.jpeg"
   },
   {
@@ -35,7 +39,8 @@
     "brand": "HP",
     "name": "HP OMEN Core i5 7th Gen - (16 GB/1 TB HDD/128 GB SSD/Windows 10 Home/4 GB Graphics) 15-ax249TX Notebook  (15.6 inch, Black)",
     "price": 99990,
-    "url": "images/laptops/4.jpeg",
+    "popularity": 10,
+    "url": "images/laptops/0.jpeg",
     "cod": true
   },
   {
@@ -43,6 +48,7 @@
     "brand": "Dell",
     "name": "Dell Insprion Core i7 7th Gen - (8 GB/1 TB HDD/Windows 10/2 GB Graphics) 3567 Notebook  (15.6 inch, Black, 2.5 kg)",
     "price": 60990,
+    "popularity": 8,
     "url": "images/laptops/5.jpeg"
   },
   {
@@ -50,6 +56,7 @@
     "brand": "Dell",
     "name": "Dell Inspiron 5000 Core i5 7th Gen - (8 GB/2 TB HDD/Windows 10 Home/2 GB Graphics) 5567 Notebook  (15.6 inch, Black)",
     "price": 60990,
+    "popularity": 6,
     "url": "images/laptops/6.jpeg",
     "cod": true,
     "outOfStock": true
@@ -59,6 +66,7 @@
     "brand": "Dell",
     "name": "Dell Inspiron Core i7 7th Gen - (16 GB/1 TB HDD/256 GB SSD/Windows 10 Home/4 GB Graphics) 7567 Notebook  (15.6 inch, Matt Black, 2.62 kg)",
     "price": 113990,
+    "popularity": 7,
     "url": "images/laptops/7.jpeg"
   },
   {
@@ -66,6 +74,7 @@
     "brand": "Lenovo",
     "name": "Lenovo 310 Core i5 6th Gen - (8 GB/1 TB HDD/Windows 10 Home/2 GB Graphics) IP 310 Notebook  (15.6 inch, Black, 2.2 kg)",
     "price": 40990,
+    "popularity": 6,
     "url": "images/laptops/8.jpeg"
   },
   {
@@ -73,6 +82,7 @@
     "brand": "Lenovo",
     "name": "Lenovo G50-80 Core i3 5th Gen - (4 GB/1 TB HDD/DOS/2 GB Graphics) G50-80 Notebook  (15.6 inch, Black, 2.5 kg)",
     "price": 34990,
+    "popularity": 6,
     "url": "images/laptops/9.jpeg",
     "cod": true,
     "outOfStock": true
